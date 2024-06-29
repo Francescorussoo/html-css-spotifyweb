@@ -1,0 +1,103 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+.sidebar {
+    width: 200px;
+    background-color: #000;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+.sidebar h2 {
+    color: #1DB954;
+    font-size: 24px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin: 10px 0;
+    color: #b3b3b3;
+}
+.upgrade-bar {
+    background-color: black;
+    margin-left: 239px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.upgrade-bar a {
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: small;
+    border: 2px solid #fff
+}
+.links-row {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-left: 150px;
+}
+.links-row a {
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.main {
+    margin-left: 260px;
+    padding: 20px;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.recently-played, .creato-per-john, .popular-artists {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.suggerimento {
+    color: gray;
+    font-size: smaller
+}
+.album, .playlist {
+    background-color: #181818;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+.album img, .playlist img {
+    width: 100%;
+    border-radius: 5px;
+}
+.album-title, .mixdaily, .playlist-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.album-subtitle, .playlist-subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.footer {
+    background-color: #181818;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
