@@ -5,18 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="sidebar">
-        <h2>Spotify</h2>
-        <ul>
-            <li>Home</li>
-            <li>Cerca</li>
-            <li>La tua libreria</li>
-            <li>Playlist</li>
-            <li>Crea Playlist</li>
-            <li>John Doe</li>
-        </ul>
+        <aside>
+            <span class="logo">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="Spotify">
+                </a>
+                <a class="logo-small" href="#">
+                    <img src="./img/logo-small.svg" alt="Spotify">
+                </a>
+            </span>
+            <nav class="links">
+                <ul>
+                    <li class="margin-hover">
+                        <a class="home hover-icon" href="#">
+                            <img class="links-icon" src="./img/home.svg" alt="home">
+                            <span class="links-text"> Home </span>
+                        </a>
+                    </li>
+
+                    <li class="margin-hover">
+                        <a class="home hover-icon" href="#">
+                            <img class="links-icon" src="./img/search.svg" alt="cerca">
+                            <span class="links-text"> Cerca </span>
+                        </a>
+                    </li>
+
+                    <li class="margin-hover">
+                        <a class="home hover-icon" href="#">
+                            <img class="links-icon" src="./img/libreria.svg" alt="libreria">
+                            <span class="links-text"> La tua libreria </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="aside-playlist">
+                <p>
+                    Playlist
+                </p>
+                <button class="crea-playlist hover-icon">
+                    <i class="fa-solid fa-square-plus fa-2xl"></i>
+                    Crea Playlist
+                </button>
+                <nav class="overflow">
+                    <ul>
+                        <li>
+                            <a class="hover-icon" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover-icon" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover-icon" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover-icon" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover-icon" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover-icon" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="account">
+                <p class="hover-icon">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                    <span class="links-text"> Install app </span>
+                </p>
+                <hr>
+                <p class="nome-account">
+                    <i class="fa-regular fa-circle-user fa-2xl"></i>
+                    <span class="links-text">Francesco Russo</span>
+                </p>
+            </div>
+        </aside>
     </div>
     <div class="upgrade-bar">
         <a href="#">EFFETTUA L'UPGRADE</a>
@@ -99,11 +181,37 @@
             </div>
         </div>
     </div>
-
+    
     <div class="footer">
-        <div>Sinister - Brano Nome</div>
-        <div>Controls</div>
+        <div class="track-info">
+            <img src="./img/sinister.jpeg" alt="Copertina Album" class="album-cover">
+            <div class="track-details">
+                <div class="track-name">Sinister</div>
+                <div class="artist-name">Brano Nome</div>
+            </div>
+        </div>
+        <div class="center-controls">
+                    <div class="control-buttons">
+
+                        <button> <i class="fa-solid fa-shuffle"></i> </button>
+                        <button> <i class="fa-solid fa-backward-step"></i> </button>
+                        <button> <i class="fa-regular fa-circle-play"></i> </button>
+                        <button> <i class="fa-solid fa-forward-step"></i> </button>
+                        <button> <i class="fa-solid fa-rotate-right"></i> </button>
+        
+                    </div>
+        </div>
+        <div class="progress-bar">
+            <span class="current-time">0:25</span>
+            <div class="progress">
+                <div class="progress-filled"></div>
+            </div>
+            <span class="duration">4:35</span>
+        </div>
+        </div>
     </div>
+
+   
 
 </body>
 </html>
