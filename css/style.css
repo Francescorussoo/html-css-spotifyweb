@@ -88,6 +88,7 @@ aside .margin-hover:hover {
 }
 .crea-playlist i {
     margin-right: 5px;
+    cursor: pointer;
 }
 .aside-playlist>* {
     margin-bottom: 15px;
@@ -116,6 +117,10 @@ aside .margin-hover:hover {
 .nome-account {
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+.links-text {
+    cursor: pointer;
 }
 .upgrade-bar {
     background-color: black;
@@ -160,7 +165,6 @@ aside .margin-hover:hover {
     color: #5A5A5A;
     padding-left: 510px;
 }
-
 .hover-icon2:hover {
     border-bottom: solid 2px greenyellow;
 }
@@ -178,14 +182,12 @@ aside .margin-hover:hover {
     font-size: smaller
 }
 .album, .playlist {
-    background-color: #181818;
     padding: 10px;
     width: 150px;
     text-align: center;
 }
 .album img, .playlist img {
     width: 100%;
-    border-radius: 5px;
 }
 .album-title, .mixdaily, .playlist-title {
     margin-top: 10px;
@@ -196,6 +198,30 @@ aside .margin-hover:hover {
     margin-top: 10px;
     font-size: 14px;
     color: #b3b3b3;
+}
+.lana, .ludo {
+    border-radius: 75px;
+    cursor: pointer;
+}
+.image-container {
+    position: relative;
+}
+.image-container img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.image-container i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white; 
+}
+.image-container:hover i {
+    opacity: 1;
 }
 .footer {
     background-color: #181818;
@@ -228,6 +254,7 @@ aside .margin-hover:hover {
 .artist-name {
     font-size: 12px;
     color: #b3b3b3;
+    margin-top: 4px;
 }
 .center-controls {
     display: flex;
@@ -242,17 +269,46 @@ aside .margin-hover:hover {
     position: relative;
     left: 154px;
     bottom: 15px;
+    font-size: 26px;
+    padding: 5px;
+}
+.fa-solid.fa-shuffle {
+    margin-right: 35px;
+    cursor: pointer;
+}
+.fa-solid.fa-backward-step {
+    margin-right: 35px;
+    cursor: pointer;
+}
+.fa-regular.fa-circle-play {
+    margin-right: 35px;
+    cursor: pointer;
+}
+.fa-solid.fa-forward-step {
+    margin-right: 35px;
+    cursor: pointer;
+}
+.fa-solid.fa-rotate-right {
+    margin-right: 35px;
+    cursor: pointer;
 }
 .progress-bar {
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 35vw;
     position: relative;
-    top: 10px;
-    right: 70px;
+    top: 25px;
+    right: 360px;
+    cursor: pointer;
 }
 .current-time, .duration {
     font-size: 12px;
+}
+.fa-regular.fa-heart {
+margin-left: 15px;
+}
+.fa-regular.fa-folder {
+    margin-left: 15px;
 }
 .progress {
     background-color: #535353;
@@ -264,7 +320,36 @@ aside .margin-hover:hover {
 }
 .progress-filled {
     background-color: #1db954;
-    width: 25%;
+    width: 45%;
+    height: 100%;
+    border-radius: 2px;
+}
+.icon {
+    position: relative;
+    right: 123px;
+    cursor: pointer;
+}
+.fa-solid.fa-list {
+    margin-left: 15px;
+}
+.fa-solid.fa-display {
+    margin-left: 15px;
+}    
+.fa-solid.fa-volume-high {
+    margin-left: 15px;
+}
+.volume {
+    background-color: #535353;
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+    top: -10px;
+    width: 120px;
+    cursor: pointer;
+} 
+.volume-filled {
+    background-color: #1db954;
+    width: 75%;
     height: 100%;
     border-radius: 2px;
 }
