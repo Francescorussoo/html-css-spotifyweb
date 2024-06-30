@@ -153,6 +153,17 @@ aside .margin-hover:hover {
     padding: 20px;
     margin-block-end: 120px;
 }
+.links-row {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #5A5A5A;
+    padding-left: 510px;
+}
+
+.hover-icon2:hover {
+    border-bottom: solid 2px greenyellow;
+}
 .section-title {
     font-size: 24px;
     margin-bottom: 20px;
